@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2019-2022, NVIDIA CORPORATION.
+# Copyright (c) 2019-2023, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -225,7 +225,7 @@ class UMAP(UniversalBase,
         More specific parameters controlling the embedding. If None these
         values are set automatically as determined by ``min_dist`` and
         ``spread``.
-    hash_input: bool, optional (default = False)
+    hash_input: bool, optional (default =True)
         UMAP can hash the training input so that exact embeddings
         are returned when transform is called on the same data upon
         which the model was trained. This enables consistent
